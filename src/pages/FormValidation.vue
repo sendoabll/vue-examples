@@ -45,7 +45,7 @@
           :value="email"
           :error="getErrorMessage(formErrors.email)"
           @input="onEmailInput" />
-        {{ formErrors.password }}
+
         <MlInput
           type="password"
           placeholder="Password"
@@ -183,7 +183,7 @@ export default {
     },
 
     handleReset () {
-      this.$data = this.getInitialState()
+      Object.assign(this.$data, this.getInitialState())
     },
 
     onUsernameInput (value) {
