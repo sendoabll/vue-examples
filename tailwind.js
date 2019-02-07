@@ -21,9 +21,9 @@ View the full documentation at https://tailwindcss.com.
 | example, you may choose to merge your custom configuration
 | values with some of the Tailwind defaults.
 |
-*/
 
 let defaultConfig = require('tailwindcss/defaultConfig')()
+*/
 
 /*
 |-------------------------------------------------------------------------------

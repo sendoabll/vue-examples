@@ -1,5 +1,3 @@
-import React, { Component } from 'react'
-
 import MlIcon from 'MyLib/Icon'
 
 class MlInput extends Component {
@@ -13,12 +11,12 @@ class MlInput extends Component {
     this.props.onChange(this.state.value)
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps (nextProps) {
     this.setState({ value: nextProps.value })
   }
 
-  renderIconField() {
-    if(!!this.props.iconName) {
+  renderIconField () {
+    if (!!this.props.iconName) {
       return (
         <span className="flex items-center leading-normal bg-grey-lighter rounded rounded-r-none border border-r-0 border-grey-light px-3 whitespace-no-wrap text-grey-dark text-sm">
           <MlIcon
@@ -33,8 +31,8 @@ class MlInput extends Component {
     return null
   }
 
-  renderErrorContainer() {
-    if(!!this.props.error) {
+  renderErrorContainer () {
+    if (!!this.props.error) {
       const errorClasses = this.props.iconName ? 'ml-12' : ''
 
       return (

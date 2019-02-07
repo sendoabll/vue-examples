@@ -1,1 +1,2 @@
-// export const HAPPY_PERSON_RAISING_ONE_HAND = require('public/assets/img/happy-person-raising-one-hand.png')
+export const VUE_CODE = require('public/assets/img/vue-code.png')
+export const VUE_LOGO = require('public/assets/img/vue-logo.png')
